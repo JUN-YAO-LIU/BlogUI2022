@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/ChatterV1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="/JimTest/javascripts/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="/ChatterV1/css/all.css" />
+    <title>@ViewBag.Title</title>
+</head>
+
+<!-- EFEFF1 f2eee5 ***E9F1F7 **E3EDEE **EAF2F9 ***E7F0F4 *EBF2FA-->
+
+<body style="background-color :#EFEFF1;">
+    <div>
+        <nav class="fixed-top navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: white;">
+            <div class="container">
+                <a style="color:#01455e ; font-size: 20px; font-weight:bold;" class="navbar-brand"
+                    href="#">Wellinkers</a>
+                <div>
+
+                    <button class="btnGeer" data-bs-toggle="modal" data-bs-target="#search-modal" type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <a style="text-decoration:none" href="http://www.stackoverflow.com/">
+                        <button class="btnGeer"><i class="fa-solid fa-circle-plus"></i></button>
+                    </a>
+
+                    <button class="btnGeer" data-bs-toggle="modal" data-bs-target="#createpost" type="button">
+                        <i class="py-1 fa-solid fa-gear"></i>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="Content">
+            <section class="Layout">
+                <div class="container">
+
+                    <div class="row row-cols-1 row-cols-md-2 my-2">
+
+                        <div class="ArticleLayout mb-4">
+                            <div style="border-radius: 15px; padding: 16px;" class="card shadow-sm">
+                                <h1 class="display-4 text-center mt-4 mb-5">Jim - introduction</h1>
+                                <p><strong>Hi,</strong></p>
+                                <p><span style="background-color:hsl(60, 75%, 60%);">I'm Jim</span></p>
+                            </div>
+                        </div>
+
+                        <div class="ArticleSide mb-4">
+                            <div style="border-radius: 15px; padding: 16px;" class="card shadow-sm mb-4">
+                                <h5 class="mb-2">相關文章：</h5>
+
+                                <ul class="list-group list-group-flush">
+                                    <a href="#" style="text-decoration: none;">
+                                        <li class="list-group-item my-1" style="border-radius:5px;">
+                                            區塊鏈入門
+                                        </li>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <li class="list-group-item my-1" style="border-radius:5px;">
+                                            甚麼是POA
+                                        </li>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <li class="list-group-item my-1" style="border-radius:5px;">
+                                            共識演算法
+                                        </li>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <li class="list-group-item my-1" style="border-radius:5px;">
+                                            Smart Contract
+                                        </li>
+                                    </a>
+
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <li class="list-group-item my-1" style="border-radius:5px;">
+                                            Solidity
+                                        </li>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <li class="list-group-item my-1" style="border-radius:5px;">
+                                            Remix
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+
+
+                            <div style="border-radius: 15px; padding: 16px;" class="card shadow-sm">
+                                <h5 class="mb-2">文章類型：</h5>
+                            
+                                <ul class="list-group list-group-flush">
+                                    <a href="#" style="text-decoration: none;">
+                                        <li class="list-group-item my-1" style="border-radius:5px;">
+                                            創業筆記 - 人際溝通
+                                        </li>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <li class="list-group-item my-1" style="border-radius:5px;">
+                                            區塊鏈開發筆記
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="DisSide">
+        <div
+            style="position:fixed;top: 100px;left:50px; padding-top: 10px; padding-bottom: 10px; background-color: white;border-radius: 10px;">
+
+            <div class="p-2 text-center">
+                <a href="/ChatterV1/home.html" style="color:#085d7b ;text-decoration:none;"><i style="font-size:20px;"
+                        class="fa-solid fa-house p-2"></i>
+                    <div style="font-size:10px ;color:#085d7b ; ">首頁</div>
+                </a>
+
+            </div>
+
+            <div class="p-2 text-center">
+                <a href="/ChatterV1/RoomList.html" style="color:#085d7b ;">
+                    <i style="font-size:20px;" class="fa-solid fa-user-plus p-2"></i>
+                </a>
+                <div style="font-size:10px ;color:#085d7b ;">人脈</div>
+            </div>
+
+            <div class="p-2 text-center">
+                <a href="/ChatterV1/RoomList.html" style="color:#085d7b ;"><i style="font-size:20px;"
+                        class="fa-solid fa-comment-dots p-2"></i>
+                </a>
+                <div style="font-size:10px ;color:#085d7b ;">聊天室</div>
+            </div>
+
+
+
+
+            <div class="p-2 text-center">
+                <a href="/ChatterV1/EditProfile.html" style="color:#085d7b ;"><i style="font-size:20px;"
+                        class="fa-solid fa-user-tag p-2"></i></a>
+                <div style="font-size:10px ;color:#085d7b ;">帳戶</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="DisFooter">
+        <footer style="background-color: white;"
+            class="shadow-lg navbar-fixed-bottom fixed-bottom d-flex justify-content-evenly">
+            <div class="p-2">
+                <a href="/ChatterV1/RoomList.html" style="color:#01455e ;"><i style="font-size:20px;"
+                        class="fa-solid fa-comment-dots p-2"></i>
+                </a>
+
+            </div>
+
+            <div class="p-2">
+                <a href="/ChatterV1/RoomList.html" style="color:#01455e ;">
+                    <i style="font-size:20px;" class="fa-solid fa-user-plus p-2"></i>
+                </a>
+            </div>
+
+            <div class="p-2">
+                <a href="/ChatterV1/home.html" style="color:#01455e ;"><i style="font-size:20px;"
+                        class="fa-solid fa-house p-2"></i></a>
+            </div>
+            <div class="p-2">
+                <a href="/ChatterV1/EditProfile.html" style="color:#01455e ;"><i style="font-size:20px;"
+                        class="fa-solid fa-user-tag p-2"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/DailyConnectV1/js/bootstrap.min.js"></script>
+    <script>
+    </script>
+
+</body>
+
+</html>

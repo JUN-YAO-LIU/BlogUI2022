@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/DailyConnectV1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/DailyConnectV1/css/all.css" />
+    <style>
+        #pillpeople {
+            font-size: 1rem;
+        }
+    </style>
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+    <nav class="shadow-sm navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a style="color:#01455e ; font-size: 20px;" class="navbar-brand" href="#">關於 - Wellinkers</a>
+            <div>
+
+                <button class="btnGeer text-black" data-bs-toggle="modal" data-bs-target="#settings-modal"
+                    style="background-color: transparent;border: none;" type="button">
+                    <img src="/icon/gear.png" style="width: 25px;height: 25px; display: block;">
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="removeScrollbary" class="container overflow-auto" style="height: 75vh;">
+        <h3 class="mt-3" style="color:#01455e ;font-weight: bolder;">
+            Wellinkers - 特色
+        </h3>
+        <div>
+            1.聊天免費<br />
+            2.匿名聊天<br />
+            3.配對免費<br />
+            4.高機率配對<br />
+            5.創業找夥伴<br />
+            6.輕鬆找朋友<br />
+            7.Google帳號輕鬆登入
+        </div>
+
+        <h3 class="mt-3" style="color:#01455e ;font-weight: bolder;">
+            Wellinkers - Story
+        </h3>
+
+        <div>
+            Wellinkers - 我的人脈，就是你的資源。<br />
+            <br />
+
+            脫離學校後，交朋友越來越難，職場上也不是這麼容易交到知心朋友。<br />
+            更別說找到一同創業、相同興趣的夥伴。<br />
+            <br />
+
+            沒了新朋友，也沒了新鮮感，人與人的連結斷裂，<br />
+            現在的各種「交友平台」都是為了交男女朋友而出現，<br />
+            平檯為了生存更是需要花錢才可以聊天、配對。(甚至花錢了也配對不到)<br />
+            <br />
+            大家有沒有想過！ 為甚麼交朋友需要花錢？ 有沒有單純建立人脈的平檯？<br />
+            既然現在是網路世代了，網路交友就應該是我們的基本權利，就該是免費！<br />
+            <br />
+            所以花了大量時間與精力建立了Wellinkers ，<br />
+            希望創造出全新的價值，這是一個建立人脈、交朋友的平檯，<br />
+            在上面可以觀看每個人簡介後，選擇想連結、交流的對象。<br />
+            <br />
+            大家都知道，你的曝光度越高，表示越有機會認識越多的人脈。<br />
+            <br />
+            因此Wellinkers 有一個特殊的演算法。<br />
+            1.只要身為VIP<br />
+            2.充分填寫自介<br />
+            <br />
+            Wellinkers就會讓你/妳的曝光度置頂，讓所有的人都能第一眼看到你/妳～<br />
+
+            現在加入Wellinkers, 馬上成為VIP吧！<br />
+            讓你/妳人脈存摺飽飽滿滿！！<br />
+        </div>
+
+
+    </div>
+
+    <footer class="shadow-lg navbar-fixed-bottom fixed-bottom d-flex justify-content-evenly">
+        <div class="p-2">
+            <a href="/ChatterV1/RoomList.html" style="color:#01455e ;">
+                <i style="font-size:20px;" class="fa-solid fa-comment-dots p-2">
+                    <span class="position-absolute translate-middle p-2 bg-danger border border-light rounded-circle"
+                        style="display:inline-block">
+                    </span>
+                </i>
+
+            </a>
+
+        </div>
+        <div class="p-2">
+            <a href="/ChatterV1/home.html" style="color:#01455e ;"><i style="font-size:20px;"
+                    class="fa-solid fa-house p-2"></i></a>
+        </div>
+        <div class="p-2">
+            <a href="/ChatterV1/EditProfile.html" style="color:#01455e ;"><i style="font-size:20px;"
+                    class="fa-solid fa-user-tag p-2"></i></a>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="home" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jim - 自介</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-2">
+                        <div>
+                            大家好～<br />
+
+                            喜歡在學習中尋找迷失的自己<br />
+                            有時方向清析、時而卻迷路在交叉路口<br />
+                            也許是想要的太多了吧<br />
+                            <br />
+                            技術上主要開發Web服務.Net<br />
+                            1.webform<br />
+                            2.asp.net core Mvc<br />
+                            3.Blazor<br />
+                            <br />
+                            平常下班在寫SideProject、看書、參加活動<br />
+                            有興趣認識、創業的朋友歡迎找我喔<br /><br />
+                        </div>
+                    </div>
+                    <hr />
+                    <textarea class="form-control" type="text" name="FirstMsg" rows="3"
+                        placeholder="請輸入邀請訊息..."></textarea>
+                    <div class="modal-body d-flex justify-content-around">
+                        <button type="button" data-bs-dismiss="modal" class="btn">
+                            取消
+                        </button>
+                        <button type="submit" asp-action="DelChatRoom" asp-controller="Home" name="roomId"
+                            value=@item.RoomId class="btn">
+                            發送
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="settings-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 style="font-size: 125%; font-weight: bolder;">Hi~ Jim-Liu</h5>
+                    <!-- <h5 style="font-size: 125%; font-weight: bolder;">Hi~ 千萬年薪的Jim-Liu 12</h5> -->
+                    <!-- <h5 class="modal-title">Hi~ 工作超級認真、有千萬年薪的Jim-Liu🤩🤩🤩🤩🤩</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <button type="submit" asp-action="ChatRoom" asp-controller="Home" name="roomId"
+                        class="my-1 list-group-item list-group-item-action">
+                        使用者條款
+                    </button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#del"
+                        class="list-group-item list-group-item-action">
+                        關於我們
+                    </button>
+                    <a type="button" href="~/Home/SignOut" class="list-group-item list-group-item-action">登出</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/DailyConnectV1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

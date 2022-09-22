@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/ChatterV1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="/JimTest/javascripts/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="/ChatterV1/css/all.css" />
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+
+    <div>
+        <nav class="fixed-top navbar navbar-expand-lg shadow-sm" style="background-color: white;">
+            <div class="container">
+                <a style="color:#01455e ; font-size: 20px;" class="navbar-brand" href="#">Jim</a>
+                <div>
+
+                    <button class="btnGeer" data-bs-toggle="modal" data-bs-target="#createpost" type="button">
+                        <i class="py-1 fa-solid fa-gear"></i>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div style="margin-top:40px ;margin-bottom:52px ;">
+            <div class="Layout removeScrollbary list-group overflow-auto border-dark">
+                <div class="mx-3">
+                    <div class="container" style="margin-top:10px;margin-bottom:25px;">
+                        <form asp-action="EditProfile" method="get">
+
+                            <div class="d-flex flex-row  justify-content-between">
+                                <div class="mt-4" style="display:flex; flex-direction: row;  align-items: center">
+                                    <label class="" style="font-weight: bolder;">姓名：</label>
+                                    <label type="text" class="postLabel">Jim</label>
+                                </div>
+
+                                <button id="btneditporfile" type="submit" data-bs-toggle="modal"
+                                    data-bs-target="#spinnerModal" class="btn">Edit</button>
+                            </div>
+
+                            <div class="my-4" style="display:flex; flex-direction: row; align-items: center">
+                                <label class="" style="font-weight: bolder;">性別：</label>
+                                <label class="">Male</label>
+                            </div>
+
+                            <div class="my-4" style="display:flex; flex-direction: row; align-items: center">
+                                <label class="" style="font-weight: bolder;">社交目的：</label>
+                                <label type="text" class="postInput">輕鬆聊聊、創業</label>
+                            </div>
+
+                            <div class="my-4" style="display:flex; flex-direction: row; align-items: start">
+                                <label class="" style="font-weight: bolder;">自介：</label>
+                                <label type="text" class="postInput">
+                                    <div>
+                                        大家好～<br />
+
+                                        喜歡在學習中尋找迷失的自己<br />
+                                        有時方向清析、時而卻迷路在交叉路口<br />
+                                        也許是想要的太多了吧<br />
+                                        <br />
+                                        技術上主要開發Web服務.Net<br />
+                                        1.webform<br />
+                                        2.asp.net core Mvc<br />
+                                        3.Blazor<br />
+                                        <br />
+                                        平常下班在寫SideProject、看書、參加活動<br />
+                                        有興趣認識、創業的朋友歡迎找我喔<br /><br />
+                                    </div>
+                                </label>
+                            </div>
+                        </form>
+
+                            <hr />
+                            <div class="mb-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>All</option>
+                                    <option value="1">創業-行銷技巧</option>
+                                    <option value="2">程式-C#-基礎</option>
+                                    <option value="3">程式-python-AI</option>
+                                </select>
+                            </div>
+
+                            <section>
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 my-2">
+
+                                    <!-- not have img -->
+                                    <div class="col mb-2">
+                                        <div class="card shadow-sm">
+                                            <div style="height:350px; position: relative;">
+                                                <div
+                                                    style="font-weight: bold;font-size: x-large; padding: 15px 15px 0 15px; ">
+                                                    C# - String 用法(限制字數) 但不知道要多長好但不知道要多長好但不知道要多長好但不
+                                                </div>
+                                                <div style="padding: 15px 15px 15px 15px;">
+                                                    This is a wider card with supporting text below as a natural
+                                                    lead-in to additional content. This content is a little bit longer.
+                                                </div>
+
+                                                <div style="position: absolute; bottom:16px; left:18px;"
+                                                    class="text-muted"><button class="btnGeer" data-bs-toggle="modal"
+                                                        data-bs-target="#search-modal" type="button">
+                                                        <i class="fa-solid fa-circle-user"></i>
+                                                    </button>
+                                                    -By Jim
+                                                </div>
+
+                                                <div>
+                                                    <div style="position: absolute; bottom:16px; right:16px;">
+
+                                                        <button class="btnGeer" data-bs-toggle="modal"
+                                                            data-bs-target="#search-modal" type="button">
+                                                            <i class="fa-solid fa-share"></i>
+                                                        </button>
+
+                                                        <a style="text-decoration:none"
+                                                            href="http://www.stackoverflow.com/">
+                                                            <button class="btnGeer"><i
+                                                                    class="fa-solid fa-bookmark"></i></button>
+                                                        </a>
+
+                                                        <button class="btnGeer" data-bs-toggle="modal"
+                                                            data-bs-target="#createpost" type="button">
+                                                            <i class="py-1 fa-solid fa-gear"></i>
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col mb-2">
+                                        <div class="card shadow-sm">
+                                            <div style="height:350px; position: relative;">
+                                                <div
+                                                    style="font-weight: bold;font-size: x-large; padding: 15px 15px 0 15px; ">
+                                                    C# - String 用法
+                                                </div>
+                                                <div style="padding: 15px 15px 15px 15px;">
+                                                    This is a wider card with supporting text below as a natural...
+                                                </div>
+
+                                                <div style="position: absolute; bottom:16px; left:18px;"
+                                                    class="text-muted"><button class="btnGeer" data-bs-toggle="modal"
+                                                        data-bs-target="#search-modal" type="button">
+                                                        <i class="fa-solid fa-circle-user"></i>
+                                                    </button>
+                                                    -By Jim
+                                                </div>
+
+                                                <div>
+                                                    <div style="position: absolute; bottom:16px; right:16px;">
+
+                                                        <button class="btnGeer" data-bs-toggle="modal"
+                                                            data-bs-target="#search-modal" type="button">
+                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                        </button>
+
+                                                        <a style="text-decoration:none"
+                                                            href="http://www.stackoverflow.com/">
+                                                            <button class="btnGeer"><i
+                                                                    class="fa-solid fa-circle-plus"></i></button>
+                                                        </a>
+
+                                                        <button class="btnGeer" data-bs-toggle="modal"
+                                                            data-bs-target="#createpost" type="button">
+                                                            <i class="py-1 fa-solid fa-gear"></i>
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col mb-2">
+                                        <div class="card shadow-sm">
+                                            <div style="height:350px; position: relative;">
+                                                <div style="font-weight: bold;font-size: x-large; padding: 15px 15px 0 15px; ">
+                                                    C# - String 用法
+                                                </div>
+                                                <div style="padding: 15px 15px 15px 15px;">
+                                                    This is a wider card with supporting text below as a natural...
+                                                </div>
+                                    
+                                                <div style="position: absolute; bottom:16px; left:18px;" class="text-muted"><button class="btnGeer"
+                                                        data-bs-toggle="modal" data-bs-target="#search-modal" type="button">
+                                                        <i class="fa-solid fa-circle-user"></i>
+                                                    </button>
+                                                    -By Jim
+                                                </div>
+                                    
+                                                <div>
+                                                    
+                                                    <div style="position: absolute; bottom:16px; right:16px;display: flex;">
+                                                        <a style="text-decoration:none;" href="http://www.stackoverflow.com/">
+                                                            <button class="btnGeer"><i class="fa-solid fa-circle-plus"></i></button>
+                                                        </a>
+                                                        <form>
+                                                            <button style="margin-left:3px;" class="btnGeer" data-bs-toggle="modal" data-bs-target="#createpost" type="button">
+                                                                <i class="py-1 fa-solid fa-gear"></i>
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- not have img end-->
+
+                                </div>
+                            </section>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="shadow-lg navbar-fixed-bottom fixed-bottom d-flex justify-content-evenly" style="background-color: white;">
+            <div class="p-2">
+                <a href="/ChatterV1/RoomList.html" style="color:#01455e ;"><i style="font-size:20px;"
+                        class="fa-solid fa-comment-dots p-2"></i>
+                </a>
+
+            </div>
+            <div class="p-2">
+                <a href="/ChatterV1/home.html" style="color:#01455e ;"><i style="font-size:20px;"
+                        class="fa-solid fa-house p-2"></i></a>
+            </div>
+            <div class="p-2">
+                <a href="/ChatterV1/EditProfile.html" style="color:#01455e ;"><i style="font-size:20px;"
+                        class="fa-solid fa-user-tag p-2"></i></a>
+            </div>
+        </footer>
+        <script src="/DailyConnectV1/js/bootstrap.min.js"></script>
+        <script>
+        </script>
+</body>
+
+</html>
