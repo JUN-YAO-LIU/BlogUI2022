@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/ChatterV1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="/ChatterV1/js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="/ChatterV1/css/all.css" />
+    <title>@ViewBag.Title</title>
+</head>
+
+<!-- EFEFF1 f2eee5 ***E9F1F7 **E3EDEE **EAF2F9 ***E7F0F4 *EBF2FA-->
+
+<body style="background-color :#EFEFF1;">
+    <div>
+        <div class="fixed-top shadow-sm">
+            <nav class="navbar navbar-expand-lg navbar-dark"
+                style="background-color: white; border-bottom:1px #EFEFF1 solid;">
+                <div class="container">
+                    <a style="color:#01455e ; font-size: 20px; font-weight:bold;" class="navbar-brand" href="/">iAm</a>
+                    <div>
+
+                        <button class="btnGeer" data-bs-toggle="modal" data-bs-target="#search-modal" type="button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                        <a style="text-decoration:none" href="http://www.stackoverflow.com/">
+                            <button class="btnGeer"><i class="fa-solid fa-circle-plus"></i></button>
+                        </a>
+
+                        <button class="btnGeer" data-bs-toggle="modal" data-bs-target="#createpost" type="button">
+                            <i class="py-1 fa-solid fa-gear"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+            </nav>
+
+            <nav style="background-color: white;height: 45px;">
+                <div class="Layout navbar navbar-expand-lg justify-content-center">
+                    <div class="scrollmenu removeScrollbary position-sticky" style="font-size:20px ; font: bold;">
+                        <a href="#" class="badge rounded-pill text-bg-primary" style="color:#01455e ;">科技 | 資訊</a>
+                        <a href="#" class="badge rounded-pill text-bg-secondary" style="color:#01455e ;">商業 | 財經</a>
+                        <a href="#" class="badge rounded-pill text-bg-success" style="color:#01455e ;">旅遊 | 住宿 | 景點</a>
+                        <a href="#" class="badge rounded-pill text-bg-danger" style="color:#01455e ;">美食 | 飲品</a>
+                        <a href="#" class="badge rounded-pill text-bg-warning" style="color:#01455e ;">電影 | 展覽 | 書籍</a>
+                        <a href="#" class="badge rounded-pill text-bg-info" style="color:#01455e ;">藝術 | 音樂</a>
+                        <a href="#" class="badge rounded-pill text-bg-info" style="color:#01455e ;">自我成長 | 體育</a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="Content">
+            <section class="Layout">
+
+                <div class="container">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner" style="border-radius: 15px;">
+                            <div class="carousel-item active">
+                                <img src="/image/基隆嶼.jpg" class="d-block w-100 CarouselIndex" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/image/澎澎鬆餅.jpg" class="d-block w-100 CarouselIndex" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/image/book.jpg" class="d-block w-100 CarouselIndex" alt="...">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="row justify-content-between my-5">
+
+                        <div class="col-md-6 col-sm-1">
+                            <div class="col mb-4">
+                                <div style="border-radius: 15px;height:400px;" class="card shadow-sm removeScrollbary overflow-auto">
+                                    <div style="padding:16px; position: relative;">
+                                        <a href="#" class="list-group-item my-1">
+                                            <div>Jim</div>
+                                            <div class="d-flex flex-row justify-content-between">
+                                                <div>
+                                                    中午要吃甚麼
+                                                </div>
+                                                <div>
+                                                    17:11
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item my-1">
+                                            <div>Jim</div>
+                                            <div class="d-flex flex-row justify-content-between">
+                                                <div>
+                                                    中午要吃甚麼
+                                                </div>
+                                                <div>
+                                                    17:11
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item my-1">
+                                            <div>Jim</div>
+                                            <div class="d-flex flex-row justify-content-between">
+                                                <div>
+                                                    中午要吃甚麼
+                                                </div>
+                                                <div>
+                                                    17:11
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item my-1">
+                                            <div>Jim</div>
+                                            <div class="d-flex flex-row justify-content-between">
+                                                <div>
+                                                    中午要吃甚麼
+                                                </div>
+                                                <div>
+                                                    17:11
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item my-1">
+                                            <div>Jim</div>
+                                            <div class="d-flex flex-row justify-content-between">
+                                                <div>
+                                                    中午要吃甚麼
+                                                </div>
+                                                <div>
+                                                    17:11
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item my-1">
+                                            <div>Jim</div>
+                                            <div class="d-flex flex-row justify-content-between">
+                                                <div>
+                                                    中午要吃甚麼
+                                                </div>
+                                                <div>
+                                                    17:11
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item my-1">
+                                            <div>Jim</div>
+                                            <div class="d-flex flex-row justify-content-between">
+                                                <div>
+                                                    中午要吃甚麼
+                                                </div>
+                                                <div>
+                                                    17:11
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item my-1">
+                                            <div>Jim</div>
+                                            <div class="d-flex flex-row justify-content-between">
+                                                <div>
+                                                    中午要吃甚麼
+                                                </div>
+                                                <div>
+                                                    17:11
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item my-1">
+                                            <div>Jim</div>
+                                            <div class="d-flex flex-row justify-content-between">
+                                                <div>
+                                                    中午要吃甚麼
+                                                </div>
+                                                <div>
+                                                    17:11
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 col-sm-1">
+                            <div class="mb-4">
+                                <div style="border-radius: 15px;height:400px;" class="card shadow-sm">
+
+                                    <div style="margin: 16px auto;">
+                                        <img style="width:225px ;height:225px;border-radius: 50%;"
+                                            src="/image/1.jpeg" />
+                                        <!-- <span style="position: absolute; left:10px; bottom:5px; color: aliceblue;">9 mins</span> -->
+                                    </div>
+                                    <div
+                                        style="height: 27px; padding:16px; position: relative;font-weight: bold;font-size: large; ">
+                                        C# - String 用法(限制字數)1
+                                    </div>
+
+
+                                    <div style="height: 95px; padding:16px; position: relative;">
+                                        <div class="text-muted">
+                                            AAASASA
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row justify-content-between my-4">
+
+                        <div class="col-md-8 col-sm-1">
+                            <div class="col mb-4">
+                                <div style="border-radius: 15px;" class="card shadow-sm">
+                                    <div style="padding:16px; position: relative;">
+                                        <div style="height: 35px;font-weight: bold;font-size: 25px; ">
+                                            C# - String 用法(限制字數)
+                                        </div>
+                                        <div class="my-2" style="height: 50px;font-weight: bold;font-size:15px; ">
+                                            <!-- <div>
+                                                中文名稱叫做點陣圖，簡單來說就是一種圖形的資料結構，把圖片切成一小格一格處理。
+                                            </div> -->
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                            <div style="position: absolute; bottom:16px;">
+    
+                                                <button class="btnGeer" data-bs-toggle="modal"
+                                                    data-bs-target="#search-modal" type="button">
+                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                </button>
+    
+                                                <a style="text-decoration:none" href="http://www.stackoverflow.com/">
+                                                    <button class="btnGeer"><i class="fa-solid fa-circle-plus"></i></button>
+                                                </a>
+    
+                                                <button class="btnGeer" data-bs-toggle="modal" data-bs-target="#createpost"
+                                                    type="button">
+                                                    <i class="py-1 fa-solid fa-gear"></i>
+                                                </button>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div style="border-radius: 15px;" class="card shadow-sm">
+                                    <div style="padding:16px; position: relative;">
+                                        <div style="height: 35px;font-weight: bold;font-size: 25px; ">
+                                            C# - String 用法(限制字數)
+                                        </div>
+                                        <div class="my-2" style="height: 100px;font-weight: bold;font-size:15px; word-wrap: break-word;">
+                                            中文名稱叫做點陣圖，簡單來說就是一種圖形的資料結構，把圖片切成一小格一格處理。
+                                            而每一小格都有他的顏色，是用三原色RGB組成的，實作上就是建立點陣圖並在上面作畫。
+                                            單位:px為單位，1mm = 3.779 px (約等於) 
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                            <div style="position: absolute; bottom:16px;">
+    
+                                                <button class="btnGeer" data-bs-toggle="modal"
+                                                    data-bs-target="#search-modal" type="button">
+                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                </button>
+    
+                                                <a style="text-decoration:none" href="http://www.stackoverflow.com/">
+                                                    <button class="btnGeer"><i class="fa-solid fa-circle-plus"></i></button>
+                                                </a>
+    
+                                                <button class="btnGeer" data-bs-toggle="modal" data-bs-target="#createpost"
+                                                    type="button">
+                                                    <i class="py-1 fa-solid fa-gear"></i>
+                                                </button>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div style="border-radius: 15px;" class="card shadow-sm">
+                                    <div style="padding:16px; position: relative;">
+                                        <div style="height: 35px;font-weight: bold;font-size: 25px; ">
+                                            C# - String 用法(限制字數)
+                                        </div>
+                                        <div class="my-2" style="height: 100px;font-weight: bold;font-size:15px; ">
+                                            中文名稱叫做點陣圖，簡單來說就是一種圖形的資料結構，把圖片切成一小格一格處理。
+                                            而每一小格都有他的顏色，是用三原色RGB組成的，實作上就是建立點陣圖並在上面作畫。
+                                            單位:px為單位，1mm = 3.779 px (約等於) 
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                            <div style="position: absolute; bottom:16px;">
+    
+                                                <button class="btnGeer" data-bs-toggle="modal"
+                                                    data-bs-target="#search-modal" type="button">
+                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                </button>
+    
+                                                <a style="text-decoration:none" href="http://www.stackoverflow.com/">
+                                                    <button class="btnGeer"><i class="fa-solid fa-circle-plus"></i></button>
+                                                </a>
+    
+                                                <button class="btnGeer" data-bs-toggle="modal" data-bs-target="#createpost"
+                                                    type="button">
+                                                    <i class="py-1 fa-solid fa-gear"></i>
+                                                </button>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-1">
+                            <div class="mb-4">
+                                <div style="border-radius: 15px;" class="card shadow-sm">
+
+                                    <div style="margin: 16px auto;">
+                                        <img style="width:225px ;height:225px;border-radius: 50%;"
+                                            src="/image/1.jpeg" />
+                                        <!-- <span style="position: absolute; left:10px; bottom:5px; color: aliceblue;">9 mins</span> -->
+                                    </div>
+                                    <div
+                                        style="height: 27px; padding:16px; position: relative;font-weight: bold;font-size: large; ">
+                                        C# - String 用法(限制字數)1
+                                    </div>
+
+
+                                    <div style="height: 95px; padding:16px; position: relative;">
+                                        <div class="text-muted">
+                                            AAASASA
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <footer style="background-color: white;" class="shadow-lg navbar-fixed-bottom d-flex justify-content-evenly">
+        footer
+    </footer>
+
+
+    <script src="/ChatterV1/js/bootstrap.min.js"></script>
+    <script>
+    </script>
+
+</body>
+
+</html>
