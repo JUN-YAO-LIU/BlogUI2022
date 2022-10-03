@@ -214,22 +214,10 @@
             margin-left: auto;
         }
 
-        @media (max-width: 480px) {
-            .ArticleLayout {
-                width: 100%;
-            }
-        }
-
         .ArticleSide {
             width: 300px;
             margin-right: auto;
             margin-left: auto;
-        }
-
-        @media (max-width: 480px) {
-            .ArticleSide {
-                width: 100%;
-            }
         }
 
         .Layout {
@@ -238,50 +226,52 @@
             margin-left: auto;
         }
 
-        @media (max-width: 480px) {
-            .Layout {
-                width: 100%;
-            }
-        }
-
-        @media (min-width: 480px) {
-            .CarouselIndex {
-                height: 540px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .CarouselIndex {
-                height: 50vw;
-            }
-        }
-
-
         .Content {
             margin-top: 130px;
             margin-bottom: 60px;
         }
 
-        @media (min-width: 480px) {
-            .DisFooter {
-                display: none;
-            }
-        }
-
         @media (max-width: 480px) {
+            .ArticleLayout {
+                width: 100%;
+            }
+            .ArticleSide {
+                width: 100%;
+            }
+            .Layout {
+                width: 100%;
+            }
+            .CarouselIndex {
+                height: 50vw;
+            }
             .DisSide {
                 display: none;
             }
-        }
-
-        @media (max-width: 480px) {
             .foursquare {
                 display: none;
             }
+            .HeadProfile{
+                border-radius: 15px;
+            
+            }
+        }
+
+        .HeadProfile{
+            margin: 16px 0; 
+            margin-left: 25px;
+
         }
 
         @media (min-width: 480px) {
+
+            .CarouselIndex {
+                height: 540px;
+            }
             .mobilefoursquare {
+                display: none;
+            }
+
+            .DisFooter {
                 display: none;
             }
         }
