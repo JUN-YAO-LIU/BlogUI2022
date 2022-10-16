@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/iAm/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="/iAm/js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="/iAm/css/all.css" />
+    <title>@ViewBag.Title</title>
+</head>
+
+<!-- EFEFF1 f2eee5 ***E9F1F7 **E3EDEE **EAF2F9 ***E7F0F4 *EBF2FA-->
+
+<body style="background-color :#EFEFF1;">
+    <div>
+        <header style="padding: 15px; background-color: white;">
+            <div style="text-align:center;">
+                <a style="color:black; font-size: 30px; font-weight:bold;" class="navbar-brand" href="/">
+                    你的部落格
+                </a>
+            </div>
+            <div style="text-align:center;color:black;font-weight:bold;border-bottom:1px #EFEFF1 solid;">
+                10分鐘建出你專屬的Blog，權限功能、發文功能直接幫你做好
+            </div>
+            <nav style="background-color: white;height: 45px;">
+                <div class="Layout navbar navbar-expand-lg justify-content-center">
+                    <div class="scrollmenu removeScrollbary position-sticky" style="font-size:20px ; font: bold;">
+                        <a href="blog-home.html" class="badge rounded-pill text-bg-primary"
+                            style="color:#01455e ;">Home</a>
+                        <a href="#" class="badge rounded-pill text-bg-secondary" style="color:#01455e ;">產品介紹</a>
+                        <a href="#" class="badge rounded-pill text-bg-success" style="color:#01455e ;">購買原始碼</a>
+                        <a href="#" class="badge rounded-pill text-bg-success" style="color:#01455e ;">心得留言</a>
+                        <a href="#" class="badge rounded-pill text-bg-info" style="color:#01455e ;">Q&A</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="Content">
+            <section class="Layout">
+                <div class="container">
+                    <!-- 
+                    <iframe style="border-radius: 15px; width: 1060px;height: 540px;" src="https://www.youtube.com/embed/Wgl9ZOSkoUE?&autoplay=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe> -->
+
+
+                    <!-- <div class="my-2 text-center">
+                        <div style="font-weight: bold;font-size: 25px;" class="my-2">如果想要改變自己，成為理想中的自己</div>
+                        <div style="font-weight: bold;font-size: 25px;" class="my-2">這會是最後一次機會！</div>
+                        <button type="submit" class="btn btn-primary">立即購買</button>
+                    </div> -->
+
+                    <!-- version 2  -->
+                    <div class="text-center my-5">
+
+                        <div style="font-weight: bold;font-size: 25px;">
+                            如果想要改變自己，成為理想中的自己
+                        </div>
+
+                        <!-- 更多文章按鈕 -->
+                        <div class="my-3">
+                            <button style="font-weight: bold;
+                                                        color: #01455e;
+                                                        border-radius:25px; 
+                                                        box-shadow:0px 0px 2px black;
+                                                        border: none;
+                                                        padding-left:30px;padding-right:30px;padding-bottom:10px;padding-top:10px;
+                                                        background-color:white;">
+                                更多文章
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                    <!-- version 1  -->
+                    <div class="row justify-content-between my-5">
+
+                        <div class="col-md-6 col-sm-1">
+                            <div class="col">
+                                <div style="border-radius: 15px;" class="">
+                                    <div style="font-weight: bold;font-size: 25px;">如果想要改變自己，成為理想中的自己</div>
+                                    <div style="font-weight: bold;font-size: 25px;">這會是最後一次機會！</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-1">
+                            <div class="col">
+                                <div style="border-radius: 15px;" class="card shadow-sm">
+                                    <form class="m-4">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">帳號末五碼</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <a href="#">購買條款，打勾視為遵守</a>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">立即購買</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <footer style="background-color: white; position: fixed;left: 0; bottom: 0;width: 100%;"
+        class="shadow-lg navbar-fixed-bottom d-flex justify-content-evenly">
+        footer
+    </footer>
+
+
+    <script src="/iAm/js/bootstrap.min.js"></script>
+    <script>
+    </script>
+
+</body>
+
+</html>

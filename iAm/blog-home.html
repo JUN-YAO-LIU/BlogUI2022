@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/iAm/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="/iAm/js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="/iAm/css/all.css" />
+    <title>@ViewBag.Title</title>
+</head>
+
+<!-- EFEFF1 f2eee5 ***E9F1F7 **E3EDEE **EAF2F9 ***E7F0F4 *EBF2FA-->
+
+<body style="background-color :#EFEFF1;">
+
+    <header style="padding: 15px; background-color: white;position: fixed;left: 0; top: 0;width: 100%;z-index: 1;">
+        <div style="text-align:center;">
+            <a style="color:black; font-size: 30px; font-weight:bold; word-wrap: break-word;" class="navbar-brand"
+                href="/">
+                你的部落格
+            </a>
+        </div>
+        <div
+            style="text-align:center;color:black;font-weight:bold;border-bottom:2px #EFEFF1 solid;padding-bottom: 5px;">
+            10分鐘建出你專屬的Blog，權限功能、發文功能直接幫你做好
+        </div>
+        <nav style="background-color: white;height: 45px;">
+            <div class="Layout navbar navbar-expand-lg justify-content-center">
+                <div class="scrollmenu removeScrollbary position-sticky" style="font-size:20px ; font: bold;">
+                    <a href="#" class="badge rounded-pill text-bg-primary" style="color:#01455e ;">Home</a>
+                    <a href="#" class="badge rounded-pill text-bg-secondary" style="color:#01455e ;">Blog</a>
+                    <a href="#" class="badge rounded-pill text-bg-secondary" style="color:#01455e ;">介紹</a>
+                    <a href="/iAm/blog-buy.html" class="badge rounded-pill text-bg-success"
+                        style="color:#01455e ;">如何架站</a>
+                    <a href="#" class="badge rounded-pill text-bg-success" style="color:#01455e ;">使用者見證</a>
+                    <a href="#" class="badge rounded-pill text-bg-info" style="color:#01455e ;">Q&A</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="Content Layout">
+
+        <section>
+            <div>
+                <img style="border-radius: 15px;" src="/image/handsom.png" class="d-block w-100 CarouselIndex"
+                    alt="...">
+            </div>
+        </section>
+
+        <!-- production -->
+        <section>
+            <div class="container my-3">
+                <!-- 
+                    <iframe style="border-radius: 15px; width: 1060px;height: 540px;" src="https://www.youtube.com/embed/Wgl9ZOSkoUE?&autoplay=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe> -->
+
+
+                <!-- <div class="my-2 text-center">
+                        <div style="font-weight: bold;font-size: 25px;" class="my-2">如果想要改變自己，成為理想中的自己</div>
+                        <div style="font-weight: bold;font-size: 25px;" class="my-2">這會是最後一次機會！</div>
+                        <button type="submit" class="btn btn-primary">立即購買</button>
+                    </div> -->
+
+                <div>
+                    <div style="height: 35px;font-weight:bold;font-size: 25px;" class="text-center">介紹</div>
+                </div>
+
+                <div class="row justify-content-between my-2">
+                    <div class="col-md-8 col-sm-1">
+
+                        <div class="col mb-4">
+                            <div style="border-radius: 15px;" class="card shadow-sm">
+
+                                <div style="padding:16px;">
+                                    <div style="height: 35px;font-weight: bold;font-size: 25px; ">
+                                        使用技術
+                                    </div>
+                                    <div class="my-2" style="font-weight: bold;font-size:15px; ">
+                                        <div>
+                                            中文名稱叫做點陣圖，簡單來說就是一種圖形的資料結構，把圖片切成一小格一格處理。
+                                            而每一小格都有他的顏色，是用三原色RGB組成的，實作上就是建立點陣圖並在上面作畫。
+                                            單位:px為單位，1mm = 3.779 px (約等於)
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <button class="btnGeer" data-bs-toggle="modal"
+                                                data-bs-target="#search-modal" type="button">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+                                        </div>
+
+                                        <div>
+                                            <button class="btnGeer" data-bs-toggle="modal"
+                                                data-bs-target="#search-modal" type="button">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+
+                                            <a style="text-decoration:none" href="http://www.stackoverflow.com/">
+                                                <button class="btnGeer"><i class="fa-solid fa-circle-plus"></i></button>
+                                            </a>
+
+                                            <button class="btnGeer" data-bs-toggle="modal" data-bs-target="#createpost"
+                                                type="button">
+                                                <i class="py-1 fa-solid fa-gear"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-4">
+                            <div style="border-radius: 15px;" class="card shadow-sm">
+                                <div style="padding:16px; position: relative;">
+                                    <div style="height: 35px;font-weight: bold;font-size: 25px; ">
+                                        Azure - 免費架站
+                                    </div>
+                                    <div class="my-2" style="font-weight: bold;font-size:15px; word-wrap: break-word;">
+                                        中文名稱叫做點陣圖，簡單來說就是一種圖形的資料結構，把圖片切成一小格一格處理。
+                                        而每一小格都有他的顏色，是用三原色RGB組成的，實作上就是建立點陣圖並在上面作畫。
+                                        單位:px為單位，1mm = 3.779 px (約等於)
+                                    </div>
+
+                                    <div class="d-flex justify-content-end">
+                                        <div>
+
+                                            <button class="btnGeer" data-bs-toggle="modal"
+                                                data-bs-target="#search-modal" type="button">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+
+                                            <a style="text-decoration:none" href="http://www.stackoverflow.com/">
+                                                <button class="btnGeer"><i class="fa-solid fa-circle-plus"></i></button>
+                                            </a>
+
+                                            <button class="btnGeer" data-bs-toggle="modal" data-bs-target="#createpost"
+                                                type="button">
+                                                <i class="py-1 fa-solid fa-gear"></i>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 col-sm-1">
+                        <div class="mb-4">
+                            <div style="border-radius: 15px;" class="card shadow-sm">
+
+                                <div style="margin: 16px auto;">
+                                    <img style="width:225px ;height:225px;border-radius: 50%;"
+                                        src="/image/jim320.png" />
+                                    <!-- <span style="position: absolute; left:10px; bottom:5px; color: aliceblue;">9 mins</span> -->
+                                </div>
+                                <div
+                                    style="height: 27px; padding:16px; position: relative;font-weight: bold;font-size: large; ">
+                                    雞湯工程師
+                                </div>
+
+
+                                <div style="padding:16px;">
+                                    <div class="text">
+                                        我是雞湯工程師 JIM 天賦為本質力，喜歡探索事物的本質並解決問題，
+                                        近期目標為學習區塊鏈相關知識及Web3.js、SmartContract等技術。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-center my-5">
+
+                <div style="font-weight: bold;font-size: 25px;">
+                    如果想要改變自己，成為理想中的自己
+                </div>
+
+                <!-- 更多文章按鈕 -->
+                <div class="my-3">
+                    <button style="font-weight: bold;
+                                                        color: #01455e;
+                                                        border-radius:25px; 
+                                                        box-shadow:0px 0px 2px black;
+                                                        border: none;
+                                                        padding-left:30px;padding-right:30px;padding-bottom:10px;padding-top:10px;
+                                                        background-color:white;">
+                        立即購買原始碼
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer style="background-color: white; padding: 30px;" class="shadow-lg navbar-fixed-bottom d-flex justify-content-evenly">
+        <div class="d-flex justify-content-center">
+            <div class="mx-5" style="color:black; text-align:left;">
+                <h5>
+                    <img class="rounded-circle" style="height: 40px;width: 40px;"
+                        src="/image/chicken.ico"><strong>雞湯工程師</strong>
+                </h5>
+                <p> 我想用文字燉出香醇雞湯讓你想用~</p>
+                &copy; 2022 - JimLiu's Blog - IG雞湯工程師
+            </div>
+        </div>
+    </footer>
+
+    <script src="/iAm/js/bootstrap.min.js"></script>
+    <script>
+    </script>
+
+</body>
+
+</html>
