@@ -71,16 +71,16 @@
             font-size: 125%;
             color: #085d7b;
             border: none;
-            border-radius: 50%;
-
+            border-radius: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         .btnGeer:hover {
             color: #fff;
             background-color: #c8c9c7;
             border: none;
-            border-radius: 50%;
-
+            border-radius: 15px;
         }
 
         .btnGeer:focus,
