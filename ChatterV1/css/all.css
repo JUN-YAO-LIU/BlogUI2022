@@ -72,7 +72,6 @@
             color: #085d7b;
             border: none;
             border-radius: 50%;
-
         }
 
         .btnGeer:hover {
@@ -272,6 +271,15 @@
 
                 margin-bottom: 30px;
             }
+
+            #ProfileCardArrow {
+                visibility:hidden
+            }
+
+            #ProfileCardTitle{
+                visibility: visible; 
+            }
+          
         }
 
         .HeadProfile {
@@ -303,5 +311,9 @@
 
             .DisFooter {
                 display: none;
+            }
+
+            #ProfileCardTitle{
+                visibility: hidden; 
             }
         }
