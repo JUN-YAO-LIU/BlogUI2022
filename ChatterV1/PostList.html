@@ -461,7 +461,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
@@ -507,28 +506,51 @@
     </div>
 
     <div class="DisFooter">
-        <footer style="background-color: white;"
-            class="shadow-lg navbar-fixed-bottom fixed-bottom d-flex justify-content-evenly">
+        <footer style="background-color: white;" class="shadow-lg navbar-fixed-bottom fixed-bottom d-flex justify-content-evenly">
             <div class="p-2">
-                <a href="/ChatterV1/RoomList.html" style="color:#01455e ;"><i style="font-size:20px;"
-                        class="fa-solid fa-comment-dots p-2"></i>
-                </a>
-
-            </div>
-
-            <div class="p-2">
-                <a href="/ChatterV1/RoomList.html" style="color:#01455e ;">
-                    <i style="font-size:20px;" class="fa-solid fa-user-plus p-2"></i>
+                <a href="~/Home/RoomList" style="color:#01455e;text-decoration:none;">
+                    <div style="align-content:center;">
+                        <div style="font-size:20px;" class="fa-solid fa-comment-dots">
+                            <span id="ChatMsgAlertDisFooter" style="display:none" class="position-absolute translate-middle p-2 bg-danger border border-light rounded-circle"></span>
+                        </div>
+                        <div style="font-size:7px;color:#085d7b;">訊息</div>
+                    </div>
                 </a>
             </div>
 
             <div class="p-2">
-                <a href="/ChatterV1/home.html" style="color:#01455e ;"><i style="font-size:20px;"
-                        class="fa-solid fa-house p-2"></i></a>
+                <a href="~/Home/MakeFriends" style="color:#01455e;text-decoration:none;">
+                    <div style="text-align: center;">
+                        <div style="font-size:20px;" class="fa-solid fa-user-plus"></div>
+                        <div style="font-size:7px ;color:#085d7b ;">人脈</div>
+                    </div>
+                </a>
             </div>
+
             <div class="p-2">
-                <a href="/ChatterV1/EditProfile.html" style="color:#01455e ;"><i style="font-size:20px;"
-                        class="fa-solid fa-user-tag p-2"></i>
+                <a href="/" style="color:#01455e;text-decoration:none;">
+                    <div style="text-align: center;">
+                        <div style="font-size:20px;" class="fa-solid fa-house"></div>
+                        <div style="font-size:7px ;color:#085d7b ;">首頁</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="p-2">
+                <a href="~/Home/CardFriends" style="color:#01455e;text-decoration:none;">
+                    <div style="text-align: center;">
+                        <div style="font-size:20px;" class="fa-solid fa-address-card"></div>
+                        <div style="font-size:7px ;color:#085d7b ;">滑卡</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="p-2">
+                <a href="~/Account/Profile" style="color:#01455e;text-decoration:none;">
+                    <div style="text-align: center;">
+                        <div style="font-size:20px;" class="fa-solid fa-user-tag"></div>
+                        <div style="font-size:7px ;color:#085d7b ;">帳戶</div>
+                    </div>
                 </a>
             </div>
         </footer>
